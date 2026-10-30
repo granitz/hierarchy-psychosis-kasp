@@ -1,13 +1,13 @@
 {
   "run_tag": "main",
-  "written": "2026-10-30T11:47:29+00:00",
+  "written": "2026-10-30T12:09:50+00:00",
   "git": {
-    "commit": "bb6380032f0013a79993a3b71122eddb32a0f8c0",
-    "describe": "bb63800",
-    "clean": true
+    "commit": "4deddb8f30711087d852877fd36bf46c42223185",
+    "describe": "4deddb8-dirty",
+    "clean": false
   },
   "python": "3.10.19",
-  "n_values": 221,
+  "n_values": 93,
   "n_nan": 0,
   "inputs": {
     "subject/ctrl": {
