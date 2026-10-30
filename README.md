@@ -60,13 +60,12 @@ statistic and every figure in the paper and is self-contained:
 | 3 | Global directedness, group comparisons |
 | 4 | Model fit (Supplementary Figure 1A) and fit diagnostics |
 | 5 | Figure 2 — hierarchical levels vs the principal gradient |
-| 6 | Figure 3 — group differences vs the principal gradient |
-| 7 | Figure 4 — gradient-hierarchy alignment vs positive symptoms |
+| 6 | Figure 3 — group differences vs the principal gradient; 6a per-region effect sizes, 6b network-level summary |
+| 7 | Figure 4 — gradient-hierarchy alignment vs positive symptoms; 7a directedness vs positive symptoms (exploratory) |
 | 8 | Supplementary Figure 2 — regional FC, lag-1 temporal autocorrelation and tSNR, each against the gradient |
 | 9 | Head motion |
 | 10 | Figures 2-3 and Supplementary Figures 1-2, composed (PDF and SVG, editable text) |
-| 11 | Additional analyses, not in the paper: network-level summary, directedness vs positive symptoms, per-region effect sizes |
-| 12 | Writes this run's `stats.csv` and `manifest.json` |
+| 11 | Writes this run's `stats.csv` and `manifest.json` |
 
 Figures and tables are written to `runs/<KASP_RUN_TAG>/figures/` and
 `.../tables/` (git-ignored); the statistics to `runs/<KASP_RUN_TAG>/stats.csv`.
