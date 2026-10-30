@@ -1,0 +1,30 @@
+# Core scientific stack
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+scikit-learn>=1.3
+
+# Statistics
+pingouin>=0.5.3
+statsmodels>=0.14
+
+# Neuroimaging: parcellation, gradients, spatial nulls
+neuromaps>=0.0.4
+netneurotools>=0.2.3
+nibabel>=5.0
+brainspace>=0.1.10
+
+# Plotting
+matplotlib>=3.7
+seaborn>=0.12
+ptitprince>=0.2.6
+
+# Table export (Table 1)
+python-docx>=1.0
+
+# Notebooks
+jupyter>=1.0
+
+# Brain renderings (section 5b only; the rest of the notebook runs without them)
+surfplot
+subcortex-visualization

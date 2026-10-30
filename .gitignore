@@ -1,0 +1,82 @@
+# ---------------------------------------------------------------------------
+# Participant data — never commit anything from these locations.
+# ---------------------------------------------------------------------------
+data/*
+!data/README.md
+!data/clinical/
+data/clinical/*
+
+*.mat
+*.tsv
+*.nii
+*.nii.gz
+*.gii
+*.dscalar.nii
+*.pscalar.nii
+*.dlabel.nii
+
+# Clinical / demographic tables in any format
+*clinical*.csv
+*clinical*.xlsx
+*demographic*.csv
+*PANSS*
+*panss*
+
+# Local path configuration (contains absolute paths). Only the templates,
+# which hold placeholders, are committed.
+.env
+.env*
+!.env.example
+envs/*
+!envs/*.env.example
+
+# ---------------------------------------------------------------------------
+# Outputs
+# ---------------------------------------------------------------------------
+# Each run writes to runs/<KASP_RUN_TAG>/. Its stats.csv and manifest.json are
+# committed; figures and tables stay local.
+runs/*/*
+!runs/*/stats.csv
+!runs/*/manifest.json
+# The executed notebook as HTML: every figure and number of the run, viewable
+# without Jupyter. ~10 MB per run; checked for identifiers before committing.
+!runs/*/reproduce_figures.executed.html
+results/
+figures/
+*.pdf
+*.tiff
+*.png
+*.docx
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# ---------------------------------------------------------------------------
+# MATLAB
+# ---------------------------------------------------------------------------
+*.asv
+*.mex*
+slprj/
+
+# ---------------------------------------------------------------------------
+# Exceptions, last so that nothing above overrides them. The template holds
+# invented values only.
+# ---------------------------------------------------------------------------
+!data/clinical/clinical_data_TEMPLATE.csv

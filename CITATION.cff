@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Analysis code for: Regional hierarchical reorganization in antipsychotic-naive first-episode psychosis"
+abstract: >-
+  Whole-brain modelling and trophic analysis code used to estimate generative
+  effective connectivity and directed hierarchical organization in
+  first-episode psychosis.
+type: software
+license: MIT
+authors:
+  - alias: granitz
+# The paper's full author list is added when it is published.
+keywords:
+  - psychosis
+  - whole-brain modelling
+  - effective connectivity
+  - cortical hierarchy
+  - trophic analysis
+  - resting-state fMRI
