@@ -1,0 +1,39 @@
+{
+  "run_tag": "main",
+  "written": "2026-10-30T11:47:29+00:00",
+  "git": {
+    "commit": "bb6380032f0013a79993a3b71122eddb32a0f8c0",
+    "describe": "bb63800",
+    "clean": true
+  },
+  "python": "3.10.19",
+  "n_values": 221,
+  "n_nan": 0,
+  "inputs": {
+    "subject/ctrl": {
+      "file": "no_grid_subjectRefinement_group-ctrl_tau-1_med-0_atlas-416.mat",
+      "md5": "f4de99390ab210be1ad304209648c52d"
+    },
+    "group/ctrl": {
+      "file": "no_grid_GroupResults_group-ctrl_tau-1_med-0_atlas-416.mat",
+      "md5": "ead81bad9540e95fbf04d512ed88e13f"
+    },
+    "subject/sz0": {
+      "file": "no_grid_subjectRefinement_group-sz_tau-1_med-0_atlas-416.mat",
+      "md5": "7f334f9563b78f60fd8b2c24916ba866"
+    },
+    "group/sz0": {
+      "file": "no_grid_GroupResults_group-sz_tau-1_med-0_atlas-416.mat",
+      "md5": "424f13e391fc613e589d47b55cfefe9b"
+    },
+    "subject/sz1": {
+      "file": "no_grid_subjectRefinement_group-sz_tau-1_med-1_atlas-416.mat",
+      "md5": "bb253c3f04c4cb4699b81d1b27b505ce"
+    },
+    "group/sz1": {
+      "file": "no_grid_GroupResults_group-sz_tau-1_med-1_atlas-416.mat",
+      "md5": "0ecce7b3f4d3112fb31fbd6439856923"
+    },
+    "atlas": "SchaeferTian416"
+  }
+}
