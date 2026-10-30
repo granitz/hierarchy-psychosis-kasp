@@ -57,15 +57,15 @@ statistic and every figure in the paper and is self-contained:
 |---|---|
 | 1 | Setup: model fits, gradient, parcel masks |
 | 2 | Table 1 — demographic and clinical characteristics, with group comparisons |
-| 3a | Global directedness, group comparisons |
-| 4a | Figure 2 — hierarchical levels vs the principal gradient |
-| 5a | Figure 3 — group differences vs the principal gradient |
-| 5b | Brain renderings for Figures 2 and 3 |
+| 3 | Global directedness, group comparisons |
+| 4 | Model fit (Supplementary Figure 1A) |
+| 5 | Figure 2 — hierarchical levels vs the principal gradient |
+| 6 | Figure 3 — group differences vs the principal gradient |
 | 7 | Figure 4 — gradient-hierarchy alignment vs positive symptoms |
 | 8 | Supplementary Figure 2 — regional FC, lag-1 temporal autocorrelation and tSNR, each against the gradient |
 | 9 | Head motion |
-| 9b | The composed Figures 2-3 and Supplementary Figures 1-2 (PDF and SVG, editable text) |
-| 10 | Writes this run's `stats.csv` and `manifest.json` |
+| 10 | Figures 2-3 and Supplementary Figures 1-2, composed (PDF and SVG, editable text) |
+| 11 | Writes this run's `stats.csv` and `manifest.json` |
 
 Figures and tables are written to `runs/<KASP_RUN_TAG>/figures/` and
 `.../tables/` (git-ignored); the statistics to `runs/<KASP_RUN_TAG>/stats.csv`.
