@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
 # Run the notebook headless for the run named in .env (KASP_RUN_TAG), keep a
-# viewable copy.
+# viewable copy of every output.
 #
 #   scripts/run_notebook.sh
 #
 # Writes into runs/<tag>/:
 #   stats.csv, manifest.json            committed -- the run's numbers
-#   reproduce_figures.executed.html     committed -- every figure and number, opens in a browser;
-#                                       home paths redacted (scripts/redact_html.py)
-#   reproduce_figures.executed.ipynb    local only -- the same as a notebook
+#   reproduce_figures.executed.ipynb    committed -- the notebook with every output; GitHub shows it
+#   reproduce_figures.executed.html     committed -- the same, opens in any browser
 #   figures/, tables/                   local only
 #
-# The executed .ipynb stays out of git (outputs make diffs unreadable); the
-# HTML is committed as the run's viewable record. The source notebook stays
-# stripped; the committed numbers are in stats.csv.
+# Local paths are removed from both executed copies (scripts/redact_html.py).
+# The source notebook, notebooks/reproduce_figures.ipynb, stays without outputs.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -32,8 +30,8 @@ jupyter nbconvert --to notebook --execute notebooks/reproduce_figures.ipynb \
     --ExecutePreprocessor.timeout=-1 \
     --output-dir "$OUT" --output reproduce_figures.executed
 jupyter nbconvert --to html "$OUT/reproduce_figures.executed.ipynb" --output-dir "$OUT"
-# The HTML is committed: take the username out of the paths it prints.
-python scripts/redact_html.py "$OUT/reproduce_figures.executed.html"
+# Both copies are committed: take local paths out of what the notebook printed.
+python scripts/redact_html.py "$OUT/reproduce_figures.executed.html" "$OUT/reproduce_figures.executed.ipynb"
 
 echo
 echo "viewable copy: $OUT/reproduce_figures.executed.html"

@@ -41,6 +41,7 @@ runs/*/*
 # The executed notebook as HTML: every figure and number of the run, viewable
 # without Jupyter. ~10 MB per run; checked for identifiers before committing.
 !runs/*/reproduce_figures.executed.html
+!runs/*/reproduce_figures.executed.ipynb
 results/
 figures/
 *.pdf

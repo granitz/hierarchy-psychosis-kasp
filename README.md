@@ -38,9 +38,15 @@ here).
 Every run of the notebook is named by `KASP_RUN_TAG` and writes to
 `runs/<tag>/`: `stats.csv` holds every reported statistic at full precision
 and `manifest.json` fingerprints the model fits it read; both are committed,
-figures and tables are not. `runs/main/` is the run reported in the paper,
-and `runs/main/reproduce_figures.executed.html` is the notebook as run, with
-every number and figure; it opens in a browser.
+figures and tables are not. `runs/main/` is the run reported in the paper.
+
+**To see the results without running anything**, open
+[`runs/main/reproduce_figures.executed.ipynb`](runs/main/reproduce_figures.executed.ipynb):
+the notebook as run, with every number and figure. If GitHub does not render
+it, use [nbviewer](https://nbviewer.org/github/granitz/hierarchy-psychosis-kasp/blob/main/runs/main/reproduce_figures.executed.ipynb),
+or download `runs/main/reproduce_figures.executed.html` and open it in a
+browser. `notebooks/reproduce_figures.ipynb` is the same notebook without
+outputs, for running it yourself.
 
 ## What produces what
 
